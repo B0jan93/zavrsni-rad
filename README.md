@@ -2,19 +2,16 @@
 
 ## POKEDEX
 
--aplikacija pretrage pokemona. <br>
--pretraga po imenu i ID-u. <br>
+-aplikacija pretrage pokemona po imenu. <br>
 -prikaz imena, slike i statistike pretrazenog pokemona. <br>
+-prikaz wiki clanka o pretrazenom pokemonu. <br>
+-simulira dodavanje i brisanje pokemona. <br>
+-sadrzi zvucne efekte. <br>
 -dizajn prilagodjen temi <br>
+-aplikacija je Desktop first ( nije responisve za mobilne uredjaje jer zahteva promenu dizajna strukture i koncepta stranice ). <br>
+
 
 -koriscena biblioteka Jquery. <br>
 
-### TODO
--responsiveness <br>
--poraditi jos malo na dizajnu <br>
--odraditi html validaciju. <br>
--js validaciju. <br>
--minifajovati CSS. <br>
--dodati teme na dugme. <br>
--dodati na klik da izbacuje pokewiki pricu o pretrazenom pokemonu (moze modal u stilu sa pokedexom).
+
 
