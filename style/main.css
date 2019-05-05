@@ -1,0 +1,589 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: url(../img-ref/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  scrollbar-color: red blue;
+  font-family: 'Wallpoet', cursive;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+#pedia{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#otvarac{
+  height: 2vw;
+  width: 5vw;
+  margin-left: 5vw;
+  margin-top: 3.7vw;
+  border-radius: 20px;
+  color: white;
+  background: #6890f0;
+
+}
+
+.more{
+  z-index: 1;
+  height: 740px;
+  width: 100%;
+  background: gray;
+  position: absolute;
+  bottom: 100px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  right: 0px;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: greenyellow;
+}
+
+#addTo{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: 0;
+  top: 357px;
+  position: absolute;
+  right: 121px;
+  background: #6890f0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  /* z-index: 12; */
+  outline: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+
+}
+#addTo:hover{
+  background: #7038f8;
+  color: black;
+}
+
+.moreClass{
+  right: 450px;
+
+}
+
+.my{
+  background: gray;
+  z-index: 1;
+  overflow:scroll;
+  overflow-x: hidden;
+  text-align: center;
+  /* top: 500px; */
+}
+
+.moji{
+  padding-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+
+}
+.moji img{
+  max-height: 100px;
+  max-width: 100px;
+  /* border: 1px solid black; */
+}
+
+.myCls{
+  right: -450px;
+}
+
+#muzika{
+  display: none;
+}
+
+#sound{
+  margin-bottom: 10px;
+  margin-left: 165px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background: rgb(15, 218, 15);
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#sound:hover{
+  background: green;
+  color: white;
+}
+
+.searchBar {
+  padding-bottom: 100px;
+  /* padding-top: 15px; */
+  text-align: center;
+  background-color:red;
+  border-radius: 8px 8px 0 0;
+}
+
+input[type="text"] {
+  height: 40px;
+  padding-left: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
+  border-radius: 8px;
+  border: 0;
+}
+
+#pokeOutput {
+  position: relative;
+  padding: 20px 50px 30px;
+  background-color: #222528;
+  z-index: 2;
+}
+
+#pokeImage {
+  display: block;
+  margin: 20px 0;
+  width: 130px;
+  position: relative;
+}
+
+.base-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat {
+  font-weight: 700;
+}
+
+.poke-name-num {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+span.name{
+    font-size: 50px;
+}
+
+.size {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.name {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.poke-info {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.container {
+    width: 450px;
+    /* margin-top: 30px; */
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    border-radius: 15px;
+  }
+
+.image-container {
+  height: 300px;
+  background-color: #bfbfc9;
+  border: 2px solid #000000;
+  color: #fff;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.2rem;
+}
+#a,#v{
+    text-align: center;
+}
+td,
+th {
+  border: 2px solid #000000;
+  text-align: left;
+  padding: 8px;
+  color: greenyellow;
+  background: #898989;
+}
+.hp,.attack,.defense,.special-attack,.special-defense,.speed{
+    text-align: center;
+}
+span{
+  color: #000;
+  font-family: 'Geo', sans-serif;
+  font-size: 30px;
+
+}
+.pokeType {
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.normal {
+  background-color: #a8a878;
+}
+.grass {
+  background-color: #78c850;
+}
+.ground {
+  background-color: #e0c068;
+}
+.fighting {
+  background-color: #c03028;
+}
+.rock {
+  background-color: #b8a038;
+}
+.steel {
+  background-color: #b8b8d0;
+}
+.fire {
+  background-color: #f08030;
+}
+.electric {
+  background-color: #f8d030;
+}
+.flying {
+  background-color: #a890f0;
+}
+.psychic {
+  background-color: #f85888;
+}
+.bug {
+  background-color: #a8b820;
+}
+.dragon {
+  background-color: #7038f8;
+}
+.water {
+  background-color: #6890f0;
+}
+.ice {
+  background-color: #98d8d8;
+}
+.poison {
+  background-color: #a040a0;
+}
+.dark {
+  background-color: #705848;
+}
+.ghost {
+  background-color: #705898;
+}
+.fairy {
+  background-color: #ffaec9;
+}
+footer {
+    background-color: red;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100px;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+#change,#changeTwo{
+      height: 80px;
+      width: 80px;
+      border-radius: 40px;
+      border: 0;
+      top: 261px;
+      position: relative;
+      left: 185px;
+      -webkit-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s;
+      background: #6890f0;
+      z-index: 9;
+      outline: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
+}
+
+#change,#changeTwo:hover{
+    background: #7038f8;
+    color: black;
+}
+.changeClass{
+  top: 16px !important;
+}
+.change2{
+  top: -120px !important;
+
+  left: 0 !important;
+  z-index: 8 !important;
+}
+.changeClass2{
+  top: -86px !important;
+  height: 20px !important;
+}
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+
+    z-index: 11;
+    height: 380px;
+    width: 450px;
+    background: red;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 0;
+    top: 100px;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+
+}
+.cover2{
+  height: 380px;
+  background: red;
+  width: 20vw;
+  z-index: 2;
+  position: absolute;
+  border-top: 1px solid black;
+  bottom: 100px;
+  width: 450px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.wrap{
+ text-align: center;
+ font-size: 40px
+}
+
+#datum{
+  top: 80px;
+  font-size: 30px !important;
+}
+
+#datum,#sat{
+  position: relative;
+  width: 220px;
+  background: greenyellow;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+  font-size: 40px;
+  border: 10px solid gray;
+  margin-left: 105px;
+}
+
+#sat{
+  top: 245px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+
+.sat2{
+  top: 20px !important;
+}
+
+.datum2{
+  top: 15px !important;
+  height: 40px !important;
+  -webkit-transition: 2s !important;
+  -o-transition: 2s !important;
+  transition: 2s !important;
+}
+
+.myClass {
+    top: 0;
+    height: 77px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+.myClass2 {
+  overflow: hidden;
+  height: 0;
+  bottom: 15px;
+  height: 85px;
+}
+
+.bars{
+  height: 50px;
+  width: 250px;
+  color: gray;
+  margin-left: 100px;
+}
+
+.outer{
+  position: relative;
+
+}
+#drzac-za-clanak{
+  padding: 25px;
+}
+#naslov{
+  padding-left: 100px;
+  padding-top: 50px;
+  font-size: 40px;
+}
+#my-pok{
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid;
+  background: #222528;
+}
+#find{
+  border: 0;
+  margin-left: -32px;
+  height: 42px;
+  border-radius: 8px;
+  background:#b8b8d0;
+  color: black;
+  font-family: 'Geo', sans-serif;
+  font: caption;
+}
+
+#find:hover{
+  background: #646566;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3e518f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: crimson;
+}
+
+
+#wikiArticle{
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid;
+  background: #222528;
+}
+
+.indexClass{
+  z-index: 4;
+}
+
+.obrisi{
+  border: 0;
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  z-index: 2;
+}
+.obrisi:hover{
+  background: red;
+  color: white;
+}
+
+@-moz-document url-prefix(){
+    body{
+      background-size: 100% 150%;
+    }
+    .cover{
+      height: 395px;
+      margin-bottom: 20px;
+
+    }
+    .more{
+      height: 765px;
+    }
+    #change{
+      top: 275px;
+      font-size: 12px;
+    }
+    #changeTwo{
+      font-size: 12px;
+    }
+    .changeClass{
+      top: 13px !important;
+    }
+    .changeClass2{
+      top:-91px !important;
+    }
+    .myClass {
+      top: 0;
+      height: 98px;
+      padding-bottom: 13px;
+      overflow: hidden;
+      border-radius: 8px 8px 0 0;
+  }
+  #pokeImage {
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    position: relative;
+    left: 20px;
+}
+#types{
+  position: absolute;
+  margin-top: 165px;
+  margin-right: 230px;
+  display: grid;
+
+}
+.pokeType{
+  margin-top: 5px;
+}
+
+#addTo{
+  right: 75px;
+}
+}

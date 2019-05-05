@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokedex</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--0.6-->
+    <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+</head>
+
+<body>
+   
+    <audio id="muzika" controls>
+        <source src="audio/Pokémon.mp3" type="audio/mp3"> <!--src="audio/pokemoni.mp3" ... za srpsku verziju pesme-->
+        <source src="audio/Pokémon.ogg" type="audio/ogg">
+    </audio>
+
+      
+        <div class="container">
+            
+          <div class="searchBar"></div>
+
+            <div id="pokeOutput">
+                <form>
+                    <input id="search" type="text" name="pokemon" list="options" placeholder="Ime Pokemon-a" required>
+                    <datalist id="options">
+                        <option value=""></option>
+                    </datalist>
+                    <button id="find" type="submit">Search</button>
+                </form>
+
+                <button id="sound">♫</button>
+
+                <div class="top-container">
+                    <div class="image-container">
+
+                        <div class="poke-name-num">
+                            <span class="name poke-info"></span>
+                            <span class="idNum poke-info"></span>
+                        </div>
+
+                        <div class="size">
+                            <span class="poke-info"><span class="weight"></span></span>
+                            <span class="poke-info"><span class="height"></span></span>
+                        </div>
+
+                        <div class="zaAdd"></div>
+
+                        <img src="" alt="" id="pokeImage">
+                        <div id="types"></div>
+                    </div>
+                </div>
+
+                <div class="bottom-container">
+
+                    <table>
+                        <tr>
+                            <th id="a">ATRIBUTI</th>
+                            <th id="v">VREDNOST</th>
+                        </tr>
+                        <tr>
+                            <td>ENERGIJA:</td>
+                            <td class="hp"></td>
+                        </tr>
+                        <tr>
+                            <td>NAPAD:</td>
+                            <td class="attack"></td>
+                        </tr>
+                        <tr>
+                            <td>ODBRANA:</td>
+                            <td class="defense"></td>
+                        </tr>
+                        <tr>
+                            <td>SP.NAPAD:</td>
+                            <td class="special-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>SP.ODBRANA:</td>
+                            <td class="special-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>BRZINA:</td>
+                            <td class="speed"></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="more">
+                <h3 id="wikiArticle">Wikipedia article</h3>
+                    <h1 id="naslov"></h1>
+                    <div id="drzac-za-clanak"></div>
+                <!-- <embed id="pedia" src='' type=""> -->
+            </div>
+            <div class="more my">
+                
+                <h3 id="my-pok">My Pokemon</h3>
+                    
+            <div class="moji">
+
+            </div>
+            </div>
+
+            <div class="cover">
+           
+                <div id="sat"></div>
+
+                <button id="change">OTVORI</button>
+
+            </div>
+            <div class="cover2">
+
+                <div class="wrap">
+                    
+                    <div id="datum"></div>
+
+  <button id="changeTwo" class="change2">OTVORI</button>
+
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
