@@ -401,7 +401,8 @@ footer {
 }
 
 #datum{
-  top: 80px;
+  transition: 1s;
+  top: 72px;
   font-size: 30px !important;
 }
 
@@ -429,7 +430,7 @@ footer {
 }
 
 .datum2{
-  top: 15px !important;
+  top: 17px !important;
   height: 40px !important;
   -webkit-transition: 2s !important;
   -o-transition: 2s !important;
